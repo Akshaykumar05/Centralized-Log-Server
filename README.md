@@ -46,6 +46,7 @@
    * Save and exit the configuration file.
   
 7. To recieve the logs from the client server, we need to open Rsyslog default port 514 on the firewall. Run the following commands to achieve this:
+   
    ```
    firewall-cmd  --permanent -add-port=514/tcp
    ```
@@ -63,22 +64,22 @@
    ![firewall tcp,udp](https://github.com/Akshaykumar05/NIC/assets/114390890/922eb207-338e-4d72-9ee0-b92ebeda301c)
 
 
-8. Set up a log file to store incoming logs:
+9. Set up a log file to store incoming logs:
    * Add the following line to the end of the file:
      
    ```
    *.* /var/log/remote.log
    ```
-9. Restart the rsyslog service:
+10. Restart the rsyslog service:
    ```
    sudo systemctl restart rsyslog
    ```
-10. To enable Rsyslog on boot, run the following command:
+11. To enable Rsyslog on boot, run the following command:
 
     ```
     sudo systemctl enable rsyslog
     ```
-11. Now, we need to confirm that the Rsyslog service is listening on port 514, use the **netstat** commands as follow:
+12. Now, we need to confirm that the Rsyslog service is listening on port 514, use the **netstat** commands as follow:
     
     ```
     sudo netstat -tulnp
@@ -119,7 +120,7 @@
 
  5. Save and exit the configuration file. Same as the Rsyslog server, open the port 514 which is the default Rsyslog port on the firewall.
 
-     ```
+   ```
    firewall-cmd  --permanent -add-port=514/tcp
    ```
    ```
