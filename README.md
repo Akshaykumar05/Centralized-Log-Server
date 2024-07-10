@@ -117,3 +117,28 @@
 
    ![rsyslog conf VM1](https://github.com/Akshaykumar05/NIC/assets/114390890/ae51ecfa-73de-4edb-bbec-7129c24a346f)
 
+ 5. Save and exit the configuration file. Same as the Rsyslog server, open the port 514 which is the default Rsyslog port on the firewall.
+
+     ```
+   firewall-cmd  --permanent -add-port=514/tcp
+   ```
+   ```
+   firewall-cmd  --permanent -add-port=514/udp
+   ```
+   * Now, reload the firewall to save the changes.
+
+   ```
+   sudo firewall-cmd --reload
+   ```
+6. Next, restsrt th rsyslog service and enable Rsyslog on boot with the following command:
+
+   ```
+   sudo systemctl restart rsyslog
+   ```
+   ```
+    sudo systemctl enable rsyslog
+   ```
+
+7. Testing the logging operation
+   
+
