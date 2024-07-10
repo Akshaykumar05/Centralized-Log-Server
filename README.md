@@ -1,6 +1,7 @@
 # Centralized-Log-Server
  ![image](https://github.com/Akshaykumar05/NIC/assets/114390890/a4b724ce-dd56-47cb-afee-49cf9b9f6cff)
 
+### Note: This document is classified and can be use only by Infra team of e-Transport project.
 * In this task, I have to transfer logs of Tomcat Servers and HAProxy to a Centralised Log Server using **rsyslog** tool. So that Developer can have all the logs together to moniter.
   ### Steps
   * Create 2 VMs, one for Tomcat services and HAProxy and other for Centalised log server.
@@ -141,5 +142,20 @@
    ```
 
 7. Testing the logging operation
-   
+   * Having successful set up and configured Rsyslog and client servers, it's time to verify the configurations are working intended.
+   * We'll hit the following command on VM1 (client server)
+
+   ```
+   # logger "Hello folks! This is our log testing"
+   ```
+   * Now head out to the Rsyslog server and run the command below to check the transfered logs in real-time.
+
+   ```
+   sudo tail -f /var/log/remote.log
+   ```
+
+   * The output from the command run on the client system should register on the Rsyslog servers's log messages to imply that the Rsyslog server is now recieving logs from the client servers.
+     
+    ![log testing](https://github.com/Akshaykumar05/Centralized-Log-Server/assets/114390890/79f6c61e-0894-47f5-9dbe-99f8813f5c8c)
+
 
