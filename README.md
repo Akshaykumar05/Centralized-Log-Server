@@ -1,5 +1,6 @@
 # Centralized-Log-Server
- ![image](https://github.com/Akshaykumar05/NIC/assets/114390890/a4b724ce-dd56-47cb-afee-49cf9b9f6cff)
+![Rsyslog drawio](https://github.com/Akshaykumar05/Centralized-Log-Server/assets/114390890/3c25d30c-3efc-4b2d-a051-8a9d9d7d4dbc)
+
 
 ### Note: This document is classified and can be used only by Infra team of e-Transport project.
 * In this task, I have to transfer logs of Tomcat Servers and HAProxy to a Centralised Log Server using **rsyslog** tool. So that Developer can have all the logs together to moniter.
