@@ -193,14 +193,34 @@
     ```
     cp eDetection.log.2025-02-11.* /tmp/eDetection_log_11_feb
     ```
+    ![log-file-4](https://github.com/user-attachments/assets/b21d42fb-085c-49e5-a6c6-ec4ab0752595)
+
  5. Again check either log are copied
     ```
-    ls eDetection_log_11_feb
+    cd eDetection_log_11_feb
     ```
+    ```
+    cd
+    ```
+    ![log-file-5](https://github.com/user-attachments/assets/0da1b3e9-5444-425d-97dd-4b521b731bd2)
+
+    
  6. Now zip the directory
     ```
     zip -r eDetection_log_11_feb.zip eDetection_log_11_feb
     ```
+    ![log-file-6](https://github.com/user-attachments/assets/79407005-b448-4e4b-acf3-ea4036ed34f5)
+
+
+ 7. At last copy the zip file in the local.
+    ```
+    scp -r etrans-infra-mon10@10.242.36.130:/tmp/eDetection_log_11_feb.zip .
+    ```
+    ![log-file-7](https://github.com/user-attachments/assets/ec57f8bc-6e69-4397-9c1f-8233ce3dddd9)
+
+ * The job is done, now you can send the zip file to the Developer.
+
+-----------------------------------------------
     
   
 
