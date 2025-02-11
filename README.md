@@ -163,4 +163,45 @@
      
      ![image](https://github.com/Akshaykumar05/Centralized-Log-Server/assets/114390890/33f4a5c1-7dfb-4ba2-adb4-97d4c9543568)
 
+-------------------------------
+-------------------------------
+## Live projects case studies:
+* There is a requirement of log of 1 day from a given server. (Need logs of 11 Feb of eDetection application with server IP 10.242.36.130)
+### Steps:
+1. Login to the required server and create a folder with the same date to save the log files.
+   ```
+   mkdir /tmp/eDetection_log_11_feb
+   ```
+   ![log-file1](https://github.com/user-attachments/assets/740dcb13-2ff9-4d6f-ae75-86d48d10e84a)
+
+2. Check the directory
+   ```
+   ls -lrth
+   ```
+   ![log-file2](https://github.com/user-attachments/assets/bed3bcbe-54ea-4be7-8219-da5dd6e20043)
+
+3. Now go to the path of logs
+   ```
+   /u01/log/app_log
+   ```
+   ```
+   ls -lrth
+   ```
+   ![log-file-3](https://github.com/user-attachments/assets/9b85cf86-2c6f-4c62-bf19-679d8837149a)
+   
+ 4. Copy the log of 11 feb in the created folder in tmp.
+    ```
+    cp eDetection.log.2025-02-11.* /tmp/eDetection_log_11_feb
+    ```
+ 5. Again check either log are copied
+    ```
+    ls eDetection_log_11_feb
+    ```
+ 6. Now zip the directory
+    ```
+    zip -r eDetection_log_11_feb.zip eDetection_log_11_feb
+    ```
+    
+  
+
 
