@@ -5,7 +5,7 @@
 ### Note: This document is classified and can be used only by Infra team of e-Transport project.
 * In this task, I have to transfer logs of Tomcat Servers and HAProxy to a Centralised Log Server using **rsyslog** tool. So that Developer can have all the logs together to moniter.
   ### Steps
-  * Create 2 VMs, one for Tomcat services and HAProxy and other for Centalised log server.
+  * Create 2 VMs, one for Tomcat services and HAProxy and other for Centralised log server.
   * VM1- Client Server: Set-up two Tomcat services named Tomcat1, Tomcat2 and HAProxy.
   * VM2- Centralised Log Server: rsyslog
   * Configure rsyslog on Tomcat and haproxy to forward logs from VM1 to VM2.
