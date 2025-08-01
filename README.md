@@ -216,9 +216,15 @@
     ```
     scp -r etrans-infra-mon10@10.242.36.130:/tmp/eDetection_log_11_feb.zip .
     ```
+ * The job is done, now you can send the zip file to the Developer.
+   
+----------------------------------------------------------------------------------
+## On client server
+Check the details of Tomcat running on the application, and configure them so that logs can be transferred on the given URL.
+
     ![log-file-7](https://github.com/user-attachments/assets/ec57f8bc-6e69-4397-9c1f-8233ce3dddd9)
 
- * The job is done, now you can send the zip file to the Developer.
+ 
 
 -----------------------------------------------
     
